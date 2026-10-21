@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iconen</title>
+        
+        <!-- Algemene styling (laadt altijd en op elk apparaat) -->
+        <link rel="stylesheet" href="styles/styles.css">
+        
+        <!-- Material Symbols: zoekicoon, hamburgermenu, pijltje vooruit, toegankelijkheid, open source, samenwerken en betrouwbaar -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=accessibility,arrow_forward,code,handshake,menu,search,verified">
+    </head>
+
+
+    <body>
+        <header>
+            <img class="logo" src="assets/logo.svg" alt="logo-gemeenteniconen">
+            <button class="hamburger-menu"><span class="material-symbols-outlined">menu</span></button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="iconen.html">Iconen</a></li>
+                    <li><a href="#Illustraties">Illustraties</a></li>
+                    <li><a href="#Doe-mee">Doe mee</a></li>
+                    <li><a href="#Rechtenvrij">Rechtenvrij</a></li>
+                    <li><a href="#credits">Credits</a></li>
+                    <li><a class="github" href="https://github.com/OpenGemeenten/Iconenset/">GitHub</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Een iconenset, open en rechtenvrij, voor elke gemeentelijke website.</h1>
+            <p> Ontwikkeld door OpenGemeenten en gemeente Veenendaal. Bedoeld voor toptaken, formulieren en navigatie op overheidssites — in vier varianten zodat het altijd past bij jouw ontwerp. </p>
+            <span class=" search-icon material-symbols-outlined"> search </span>
+            <input class="search-input" type="search" placeholder="Zoek een icoon">
+            
+            <div id="categorie-filters">
+                <h2>Categorie</h2>
+                <button class="Alles" onclick="filterSelection ('Alles')">Alles</button>
+                <button class="Alles" onclick="filterSelection ('Identiteit')">Identiteit</button>
+            </div>
+            
+            <div id="variant-filters">
+                <h2>Variant</h2>
+                <button class="Alles" onclick="filterSelection ('Line')">Line</button>
+                <button class="Alles" onclick="filterSelection ('Fill')">Fill</button>
+                <button class="Alles" onclick="filterSelection ('Regular')">Regular</button>
+                <button class="Alles" onclick="filterSelection ('Diapositive')">Diapositive</button>
+            </div>
+
+            <h2> 250 iconen gevonden</h2>
+            <h2>Sorteren op</h2>
+            <button class="Sorteren-op" onclick="filterSelection ('Meest-relevant')">Meest relevant</button>
+
+
+        </main>
+
+
+
+    <footer>
+                <div class="over-iconen">
+                <img class="logo-footer" src="assets/logo.svg" alt="logo-footer">
+                <h3>Over de iconen</h3>
+                    <p>Deze set is een initiatief van OpenGemeenten en wordt doorlopend aangevuld door gemeenten en overheidsinstanties. </p> 
+                </div>
+                
+                <div class="ontdek-blok">
+                    <h3>Ontdek</h3> 
+                    <ul class="ontdek">
+                        <li> <a href="iconen.html">Iconen</a></li>
+                        <li><a href="#Illustraties">Illustraties</a></li>
+                        <li><a href="#Doe mee">Doe mee</a></li>
+                    </ul>
+                </div>
+
+                <div class="informatie-blok">
+                    <h3>OpenGemeenten</h3>
+                    <ul class="informatie">
+                        <li><a href="https://www.opengemeenten.nl/">opengemeenten.nl</a></li>
+                        <li><a href="#Rechtenvrij">Rechtenvrij</a></li>
+                        <li><a href="#credits">Credits</a></li>
+                        <li><a class="github" href="https://github.com/OpenGemeenten/Iconenset/">GitHub</a></li>
+                    </ul>
+                </div>
+                    
+                <div class="contact-blok">
+                    <h3>Samen maken we de set beter</h3>
+                    <p class="contact-tekst">Mis je een icoon of heb je een vraag? Laat het ons weten.</p>
+                    <p class="mail-link"><a href="mailto:hallo@opengemeenten.nl">hallo@opengemeenten.nl</a></p>
+                    <p class="contact-link"><a href="https://www.opengemeenten.nl/contact">Contact met OpenGemeenten</a></p>
+                </div>
+            </footer>
+    
+
+
+
+
+    </body>
+</html>
+
+
+

@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #F7FBFF;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+/* H2 sectiekoppen */
+h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    max-width:32em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 24px;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #D5E4F4;
+    border-radius: 20px;
+}
+
+.nav {
+    display: none;
+}
+
+.hamburger-menu {
+    background-color: #EAF4FF;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+main > section {
+    padding: 0px 24px;
+}
+
+
+.hero-banner {
+    background-color: #EAF4FF;
+    padding: 24px 24px 40px 24px;
+
+    h1 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #455973;
+    }
+
+    .hero-knoppen {
+        display: flex;
+        flex-wrap:wrap;
+        gap: 8px;
+        font-size: 14px;
+        line-height: 20px;
+
+        /* Grotere telefoons */
+        @media (width >= 360px) {
+            gap: 16px;
+        
+            a {
+            font-size: 14px;
+            }
+        }
+    }
+
+    a {
+        font-size: 13px; /* bah */
+        font-weight: 600;
+        line-height: 48px;
+        box-sizing: border-box;
+        padding-inline:1em;
+
+        text-decoration: none;
+        border-radius: 12px;
+        white-space: nowrap;
+    }
+
+    .primaire-knop {
+        background-color: #1769D4;
+        color: white;
+    }   
+
+.secundaire-knop {
+        background-color: white;
+        color: black;
+        border: 1px solid #D5E4F4;
+    }
+
+    /* Grotere telefoons */
+    @media (width >= 360px) {
+        .hero-knoppen {
+            gap: 16px;
+        }
+
+         a {
+            font-size: 14px;
+        }
+
+    }
+}
+
+/* Wat zoek je */
+.wat-zoek-je {
+    background-color: white;
+    padding: 32px 24px 40px 24px;
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        color: #5F718C;
+        margin: 0;
+        margin-bottom: 24px; 
+    }
+
+    .keuze-kaarten {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 22px;
+            color: #5F718C;
+            margin: 0;
+        }
+
+        a {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            color: #1769D4;
+
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            text-decoration: none;
+        }
+
+        .material-symbols-outlined {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        /* Tablet */
+        @media (width >= 768px) {
+            grid-template-columns: 1fr 1fr;            
+        }
+    }
+
+    .keuze-kaart {
+        border: 1px solid #D5E4F4;
+        border-radius: 18px;
+        padding: 24px;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+}
+
+/* Waarom gemeenteniconen */
+.waarom-gemeenteiconen {
+    background-color: #F7FBFF;
+    padding: 32px 24px 40px 24px;
+
+    p {
+        font-size: 14px;
+        line-height: normal;
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    .voordeel-kaarten {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            margin: 0;
+            
+            @media (width >= 360px) {
+                font-size: 18px;
+                line-height: 26px;
+            }  
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            margin: 0;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            color: #5F718C;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        /* Desktop */
+        @media (width >= 1024px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    .voordeel-kaart {
+        border: 1px solid #D5E4F4;
+        border-radius: 14px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .material-symbols-outlined {
+            background-color: #EAF4FF;
+            border-radius: 50%;
+            border: none;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            margin-top: 18px;
+            font-size: 30px;
+        }
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #0B2B50;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 40px 24px 48px 24px;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        color: white;
+        margin: 0;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #C4D6ED;
+        margin: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        display: grid;
+        gap: 22px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .logo-footer {
+        filter: invert(100%);
+        width: 161px;
+        height: auto;
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .over-iconen, .ontdek-blok, .informatie-blok {
+        margin-bottom: 39px;
+
+        /* Tablet */
+        @media (width >= 768px) {
+            margin-bottom: 0;  
+        }
+    }
+
+    .over-iconen h3 {
+        margin-bottom: 12px;
+    }
+
+    .ontdek-blok h3, .informatie-blok h3 {
+        margin-bottom: 19px;
+    }
+
+    .contact-tekst {
+        margin-bottom: 23px;
+    }
+
+    .mail-link {
+        margin-bottom: 34px;
+    }
+
+    @media (width >= 768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (width >= 1024px ) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
