@@ -6,12 +6,11 @@
         <title>Iconen</title>
         
         <!-- Algemene styling (laadt altijd en op elk apparaat) -->
-        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/style.css">
         
         <!-- Material Symbols: zoekicoon, hamburgermenu, pijltje vooruit, toegankelijkheid, open source, samenwerken en betrouwbaar -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=accessibility,arrow_forward,code,handshake,menu,search,verified">
     </head>
-
 
     <body>
         <header>
@@ -30,35 +29,40 @@
         </header>
 
         <main>
-            <h1>Een iconenset, open en rechtenvrij, voor elke gemeentelijke website.</h1>
-            <p> Ontwikkeld door OpenGemeenten en gemeente Veenendaal. Bedoeld voor toptaken, formulieren en navigatie op overheidssites — in vier varianten zodat het altijd past bij jouw ontwerp. </p>
-            <span class=" search-icon material-symbols-outlined"> search </span>
-            <input class="search-input" type="search" placeholder="Zoek een icoon">
+            <section class="hero-banner-icons">
+                <h1>Een iconenset, open en rechtenvrij, voor elke gemeentelijke website.</h1>
+                <p> Ontwikkeld door OpenGemeenten en gemeente Veenendaal. Bedoeld voor toptaken, formulieren en navigatie op overheidssites — in vier varianten zodat het altijd past bij jouw ontwerp. </p>
+                <span class=" search-icon material-symbols-outlined"> search </span>
+                <input class="search-input" type="search" placeholder="Zoek een icoon">
+                <ul>
+                    <li></li>
+                </ul>
+            </section>
             
-            <div id="categorie-filters">
-                <h2>Categorie</h2>
-                <button class="Alles" onclick="filterSelection ('Alles')">Alles</button>
-                <button class="Alles" onclick="filterSelection ('Identiteit')">Identiteit</button>
-            </div>
+            <section class="iconen-main">
+                <div class="filters">
+                    <div id="categorie-filters">
+                        <h2>Categorie</h2>
+                        <button class="Alles" onclick="filterSelection ('Alles')">Alles</button>
+                        <button class="Alles" onclick="filterSelection ('Identiteit')">Identiteit</button>
+                    </div>
             
-            <div id="variant-filters">
-                <h2>Variant</h2>
-                <button class="Alles" onclick="filterSelection ('Line')">Line</button>
-                <button class="Alles" onclick="filterSelection ('Fill')">Fill</button>
-                <button class="Alles" onclick="filterSelection ('Regular')">Regular</button>
-                <button class="Alles" onclick="filterSelection ('Diapositive')">Diapositive</button>
-            </div>
+                    <div id="variant-filters">
+                        <h2>Variant</h2>
+                        <button class="Alles" onclick="filterSelection ('Line')">Line</button>
+                        <button class="Alles" onclick="filterSelection ('Fill')">Fill</button>
+                        <button class="Alles" onclick="filterSelection ('Regular')">Regular</button>
+                        <button class="Alles" onclick="filterSelection ('Diapositive')">Diapositive</button>
+                    </div>
+                </div>
 
-            <h2> 250 iconen gevonden</h2>
-            <h2>Sorteren op</h2>
-            <button class="Sorteren-op" onclick="filterSelection ('Meest-relevant')">Meest relevant</button>
-
-
+                <h2> 250 iconen gevonden</h2>
+                <h2>Sorteren op</h2>
+                <button class="Sorteren-op" onclick="filterSelection ('Meest-relevant')">Meest relevant</button> 
+            </section>
         </main>
 
-
-
-    <footer>
+        <footer>
                 <div class="over-iconen">
                 <img class="logo-footer" src="assets/logo.svg" alt="logo-footer">
                 <h3>Over de iconen</h3>
@@ -91,11 +95,6 @@
                     <p class="contact-link"><a href="https://www.opengemeenten.nl/contact">Contact met OpenGemeenten</a></p>
                 </div>
             </footer>
-    
-
-
-
-
     </body>
 </html>
 

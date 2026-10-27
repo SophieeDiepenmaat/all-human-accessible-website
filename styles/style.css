@@ -147,7 +147,7 @@ main > section {
         display: grid;
         grid-template-columns: 1fr;
         gap: 24px;
-
+        
         h3 {
             font-size: 18px;
             font-weight: 700;
@@ -193,7 +193,25 @@ main > section {
         display: grid;
         grid-template-columns: 1fr;
         gap: 12px;
+        
+        img {
+            width: auto;
+            height: 180px;
+            object-fit: cover;
+            object-position: center;
+        }    
+        
+        p {
+            max-width: none;
+        }
+        @media (width >= 1024px) {
+            img {
+                height: 240px;
+            }
+        }
     }
+
+   
 
 }
 
