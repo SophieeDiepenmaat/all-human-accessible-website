@@ -25,6 +25,65 @@ p {
     max-width:32em;
 }
 
+
+
+/************/
+/* HET MENU */
+/************/
+nav {
+  position: fixed;
+  inset: 0;
+  translate: -100%;
+  
+  @media (prefers-reduced-motion: no-preference) {
+    transition-duration: .2s;
+  }
+
+  @media (width > 38em) {
+    position: static;
+    background: none;
+    translate: 0;
+  }
+}
+
+/* als menu open is */
+nav.is-open {
+  translate: 0;
+}
+
+/* als menu dicht is */
+nav.is-closed {
+  translate: -100%;
+}
+
+nav button {
+  @media (width > 38em) {
+    display: none;
+  }
+}
+
+nav ul {
+  @media (width > 38em) {
+    display: flex;
+    gap: 1em;
+  }
+}
+
+nav a {
+  @media (width > 38em) {
+    border: none;
+    flex-direction: column;  
+  }
+
+  @media (width > 57em) {
+    flex-direction: row;
+
+    img {
+      height: 3em;
+    }
+  }
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -36,9 +95,17 @@ header {
     border-radius: 20px;
 }
 
-.nav {
-    display: none;
+header > a:last-of-type {
+   @media (width > 38em) {
+    border: none;
+    flex-direction: column; 
+  }
+
+  @media (width > 57em) {
+    flex-direction: row;
+  }
 }
+
 
 .hamburger-menu {
     background-color: #EAF4FF;
